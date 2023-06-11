@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import SideBar from './components/SideBar';
+import Content from './components/Content';
 
 function App() {
+  const [isNightMode, setIsNightMode] = useState(false);
+
+  const toggleMode = () => {
+    setIsNightMode(!isNightMode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <div className="row">
+        <SideBar isNightMode={isNightMode} toggleMode={toggleMode} />
+        <Content isNightMode={isNightMode} />
+      </div>
     </div>
   );
 }

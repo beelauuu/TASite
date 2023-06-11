@@ -1,0 +1,75 @@
+.profile-image {
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+.bold-text {
+font-weight: bold;
+}
+
+.day-mode {
+  background-color: #F6EEE5;
+  color: black;
+  padding-top: 30px; /* set the top margin to 20 pixels */
+}
+
+.night-mode {
+  background-color:#232b2b;
+  color: white;
+  padding-top: 30px; /* set the top margin to 20 pixels */
+}
+
+.day-mode-text {
+    color: black;
+}
+
+.night-mode-text {
+    color: white;
+}
+
+
+.wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the column width as needed */
+    grid-gap: 10px; /* Adjust the gap between items as needed */
+  }
+
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider .toggle-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+  }
+  
+  input:checked + .slider {
+    background-color: #1f263b;
+  }
+    
+  input:checked + .slider .toggle-icon {
+    color: #fff;
+  }
+  
+  
+  
