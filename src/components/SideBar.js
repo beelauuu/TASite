@@ -1,8 +1,12 @@
 import React, { useEffect } from "react";
 import "../style/App.css";
 import SwitchImage from "./SwitchImage";
+import { useKonami } from "react-konami-code";
 
 function SideBar({ isNightMode, toggleMode }) {
+  useKonami(() => {
+    alert("You found the easter egg! Good job :) -Brian");
+  });
   useEffect(() => {
     if (isNightMode) {
       document.documentElement.style.backgroundColor = "#232b2b";

@@ -12,13 +12,13 @@ font-weight: bold;
 .day-mode {
   background-color: #F6EEE5;
   color: black;
-  padding-top: 30px; /* set the top margin to 20 pixels */
+  padding-top: 30px;
 }
 
 .night-mode {
   background-color:#232b2b;
   color: white;
-  padding-top: 30px; /* set the top margin to 20 pixels */
+  padding-top: 30px;
 }
 
 .day-mode-text {
@@ -32,8 +32,8 @@ font-weight: bold;
 
 .wrapper-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the column width as needed */
-    grid-gap: 10px; /* Adjust the gap between items as needed */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-gap: 10px; 
   }
 
   .toggle-switch {
