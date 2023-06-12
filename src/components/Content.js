@@ -1,13 +1,13 @@
 import React from 'react';
 import '../style/App.css';
-import './SwitchImage';
+import TypingEffect from'./TypingEffect';
 
 function Content({ isNightMode }) {
   const items = Array.from({ length: 30 }, (_, i) => i + 1);
 
   return (
     <div className={`col-lg-8 content ${isNightMode ? 'night-mode' : 'day-mode'}`}>
-      <h1 className={`mb-3 text-center ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>Weekly Materials</h1>
+      <h1 className={`mb-3 text-center ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}><TypingEffect text="Weekly Materials"/></h1>
       <div className="container text-center">
         <div className="week-div">
           <div className="wrapper-grid">

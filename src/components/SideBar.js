@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "../style/App.css";
 import SwitchImage from "./SwitchImage";
+import TypingEffect from "./TypingEffect";
 import { useKonami } from "react-konami-code";
 
 function SideBar({ isNightMode, toggleMode }) {
@@ -21,7 +22,7 @@ function SideBar({ isNightMode, toggleMode }) {
     >
       <div className="text-center">
         <SwitchImage />
-        <h3>Brian Lau</h3>
+        <h3><TypingEffect text="Brian Lau"/></h3>
         <h6 className="mb-1">CMSC132 Lead TA (Summer 2023)</h6>
         <p className="mb-1">blau1[at]umd[dot]edu</p>
         <a href="https://www.cs.umd.edu/class/summer2023/cmsc132/">
