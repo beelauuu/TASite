@@ -13,7 +13,6 @@ function App() {
   };
 
   return (
-    // Container for the entire page
     <div className="container-fluid">
       {/* Row for the sidebar and content */}
       <div className="row">

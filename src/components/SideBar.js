@@ -31,20 +31,20 @@ function SideBar({ isNightMode, toggleMode }) {
         {/* TypingEffect for my name */}
         <h3><TypingEffect text="Brian Lau"/></h3>
         {/* Misc. information */}
-        <h6 className="mb-1">CMSC132 Lead TA (Summer 2023)</h6>
+        <h6 className="mb-1">CMSC131 Lead TA (Spring 2024)</h6>
         <p className="mb-1">blau1[at]umd[dot]edu</p>
-        <a href="https://www.cs.umd.edu/class/summer2023/cmsc132/">
+        <a href="https://www.cs.umd.edu/class/spring2024/cmsc131/">
           Class Website
         </a>
         <br />
-        <a href="google.com">Feedback</a>
+        <a href="https://forms.gle/eFX5yatJmymQp5ve9">Feedback</a>
         <p className="mb-0">
           <b className="bold-text">Discussion:</b> T,Th 12:30-1:20pm @{" "}
-          <b className="bold-text">CSI 3130</b>
+          <b className="bold-text">CSI 2118</b>
         </p>
         <p>
-          <b className="bold-text">OH:</b> TBD @{" "}
-          <b className="bold-text">TBD</b>
+          <b className="bold-text">OH:</b> Th @{" "}
+          <b className="bold-text">10 am</b>
         </p>
         {/* Toggle for the night mode */}
         <label className="toggle-switch">

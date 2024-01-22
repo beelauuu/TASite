@@ -3,7 +3,8 @@ import '../style/App.css';
 import TypingEffect from'./TypingEffect';
 
 function Content({ isNightMode }) {
-  const items = Array.from({ length: 30 }, (_, i) => i + 1);
+  //Turning off mapping for now, don't know what the links will be when all is said and done
+  // const items = Array.from({ length: 30 }, (_, i) => i + 1);
 
   return (
     // Container for the main content (discussion slides and code)
@@ -15,11 +16,10 @@ function Content({ isNightMode }) {
         {/* Starting grid for every discussion */}
           <div className="wrapper-grid">
             {/* Map from discussion 1-30 (week 1-15) */}
-            {items.map((i) => (
-              <div className={`wrapper mt-1 ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`} key={i}>
+              <div className={`wrapper mt-1 ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
                 {/* In-line so buttons display after it */}
                 <p style={{ display: 'inline' }} className={`week ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
-                  Discussion {i}:
+                  Discussion 1:
                 </p>
                 {/* Buttons for slides and code (color depending on the mode) */}
                 <button
@@ -37,7 +37,6 @@ function Content({ isNightMode }) {
                   Code
                 </button>
               </div>
-            ))}
           </div>
         </div>
       </div>
