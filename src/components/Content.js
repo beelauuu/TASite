@@ -1,45 +1,38 @@
 import React from 'react';
 import '../style/App.css';
-import TypingEffect from'./TypingEffect';
+import TypingEffect from './TypingEffect';
 
 function Content({ isNightMode }) {
-  //Turning off mapping for now, don't know what the links will be when all is said and done
-  // const items = Array.from({ length: 30 }, (_, i) => i + 1);
+  const handleButtonClick = (url) => {
+    // Open the specified URL in a new tab
+    window.open(url, '_blank');
+  };
 
   return (
-    // Container for the main content (discussion slides and code)
     <div className={`col-lg-8 content ${isNightMode ? 'night-mode' : 'day-mode'}`}>
-      {/* Typing Effect for Title */}
-      <h1 className={`mb-3 text-center ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}><TypingEffect text="Weekly Materials"/></h1>
-      {/* Container for my discussion stuff (points to nothing for now) */}
+      <h1 className={`mb-3 text-center ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
+        <TypingEffect text="Weekly Materials" />
+      </h1>
+
       <div className="container text-center">
-        {/* Starting grid for every discussion */}
-          <div className="wrapper-grid">
-            {/* Map from discussion 1-30 (week 1-15) */}
-              <div className={`wrapper mt-1 ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
-                {/* In-line so buttons display after it */}
-                <p style={{ display: 'inline' }} className={`week ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
-                  Discussion 1:
-                </p>
-                {/* Buttons for slides and code (color depending on the mode) */}
-                <button
-                  type="button"
-                  style={{ marginLeft: '10px' }}
-                  className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
-                >
-                  Slides
-                </button>
-                <button
-                  type="button"
-                  style={{ marginLeft: '10px' }}
-                  className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
-                >
-                  Code
-                </button>
-              </div>
+        <div className="wrapper-grid">
+          <div className={`wrapper mt-1 ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
+            <p style={{ display: 'inline' }} className={`week ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
+              Discussion 1:
+            </p>
+
+            <button
+              type="button"
+              onClick={() => handleButtonClick('https://beelauuu.github.io/slides/docs/13024')}
+              style={{ marginLeft: '10px' }}
+              className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
+            >
+              Slides
+            </button>
           </div>
         </div>
       </div>
+    </div>
   );
 }
 
