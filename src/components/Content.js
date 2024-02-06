@@ -43,7 +43,7 @@ function Content({ isNightMode }) {
             </button>
             <button
               type="button"
-              // onClick={() => handleButtonClick('https://beelauuu.github.io/slides/docs/20124')}
+              onClick={() => handleButtonClick('https://github.com/beelauuu/TASite/raw/main/public/discussion/DiscussionTwo.zip')}
               style={{ marginLeft: '10px' }}
               className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
             >
