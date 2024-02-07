@@ -67,7 +67,7 @@ function Content({ isNightMode }) {
             </button>
             <button
               type="button"
-              // onClick={() => handleButtonClick('https://github.com/beelauuu/TASite/raw/main/public/discussion/DiscussionThree.zip')}
+              onClick={() => handleButtonClick('https://github.com/beelauuu/TASite/raw/main/public/discussion/DiscussionThree.zip')}
               style={{ marginLeft: '10px' }}
               className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
             >
@@ -81,7 +81,7 @@ function Content({ isNightMode }) {
             </p>
             <button
               type="button"
-              // onClick={() => handleButtonClick('https://beelauuu.github.io/slides/docs/20824')}
+              onClick={() => handleButtonClick('https://beelauuu.github.io/slides/docs/20824')}
               style={{ marginLeft: '10px' }}
               className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
             >
