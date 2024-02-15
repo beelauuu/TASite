@@ -113,7 +113,7 @@ function Content({ isNightMode }) {
           {/* Discussion 6*/}
           <div className={`wrapper mt-1 ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
             <p style={{ display: 'inline' }} className={`week ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
-              Discussion 4:
+              Discussion 6:
             </p>
             <button
               type="button"
