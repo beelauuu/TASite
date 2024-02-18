@@ -132,6 +132,44 @@ function Content({ isNightMode }) {
               Code
             </button>
           </div>
+          {/* Discussion 7*/}
+          <div className={`wrapper mt-1 ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
+            <p style={{ display: 'inline' }} className={`week ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
+              Discussion 7:
+            </p>
+            {/* <button
+              type="button"
+              onClick={() => handleButtonClick('https://beelauuu.github.io/slides/docs/22024')}
+              style={{ marginLeft: '10px' }}
+              className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
+            >
+              Slides
+            </button> */}
+            {/* <button
+              type="button"
+              onClick={() => handleButtonClick('https://github.com/beelauuu/TASite/raw/main/public/discussion/DiscussionSeven.zip')}
+              style={{ marginLeft: '10px' }}
+              className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
+            >
+              Code
+            </button> */}
+          </div>
+
+          {/* Discussion 8*/}
+          <div className={`wrapper mt-1 ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
+            <p style={{ display: 'inline' }} className={`week ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
+              Discussion 8:
+            </p>
+            {/* <button
+              type="button"
+              onClick={() => handleButtonClick('https://beelauuu.github.io/slides/docs/22224')}
+              style={{ marginLeft: '10px' }}
+              className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
+            >
+              Slides
+            </button> */}
+          </div>
+          
         </div>
       </div>
     </div>
