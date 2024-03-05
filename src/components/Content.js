@@ -223,6 +223,29 @@ function Content({ isNightMode }) {
               Code
             </button>
           </div>
+
+          {/* Discussion 10 */}
+          <div className={`wrapper mt-1 ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
+            <p style={{ display: 'inline' }} className={`week ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
+              Discussion 10:
+            </p>
+            <button
+              type="button"
+              onClick={() => handleButtonClick('https://beelauuu.github.io/slides/docs/30524')}
+              style={{ marginLeft: '10px' }}
+              className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
+            >
+              Slides
+            </button>
+            {/* <button
+              type="button"
+              onClick={() => handleButtonClick('https://github.com/beelauuu/TASite/raw/main/public/discussion/DiscussionTen.zip')}
+              style={{ marginLeft: '10px' }}
+              className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
+            >
+              Code
+            </button> */}
+          </div>
         </div>
       </div>
     </div>
