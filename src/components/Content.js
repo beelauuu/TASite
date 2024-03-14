@@ -290,6 +290,14 @@ function Content({ isNightMode }) {
             >
               Slides
             </button>
+            <button
+              type="button"
+              onClick={() => handleButtonClick('https://github.com/beelauuu/TASite/raw/main/public/discussion/DiscussionThirteenAndFourteen.zip')}
+              style={{ marginLeft: '10px' }}
+              className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
+            >
+              Code
+            </button>
           </div>
 
 
