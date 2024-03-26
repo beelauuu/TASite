@@ -45,8 +45,6 @@ function SideBar({ isNightMode, toggleMode }) {
         <p>
           <b className="bold-text">OH:</b> Th @{" "}
           <b className="bold-text">10 am</b>
-          <br></br> 
-          <TypingEffect text="Have a good spring break :)"/>
         </p>
         {/* Toggle for the night mode */}
         <label className="toggle-switch">
