@@ -331,10 +331,10 @@ function Content({ isNightMode }) {
             </button>
           </div>
 
-            {/* Discussion 15 */}
+            {/* Discussion 16*/}
             <div className={`wrapper mt-1 ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
               <p style={{ display: 'inline' }} className={`week ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
-                Discussion 15:
+                Discussion 16:
               </p>
               <button
                 type="button"
@@ -344,14 +344,6 @@ function Content({ isNightMode }) {
               >
                 Slides
               </button>
-              {/* <button
-                type="button"
-                onClick={() => handleButtonClick('https://github.com/beelauuu/TASite/raw/main/public/discussion/DiscussionFifteen.zip')}
-                style={{ marginLeft: '10px' }}
-                className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
-              >
-                Code
-              </button> */}
             </div>
 
         </div>
