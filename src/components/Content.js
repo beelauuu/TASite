@@ -331,6 +331,29 @@ function Content({ isNightMode }) {
             </button>
           </div>
 
+            {/* Discussion 15 */}
+            <div className={`wrapper mt-1 ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
+              <p style={{ display: 'inline' }} className={`week ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
+                Discussion 15:
+              </p>
+              <button
+                type="button"
+                onClick={() => handleButtonClick('https://beelauuu.github.io/slides/docs/32824')}
+                style={{ marginLeft: '10px' }}
+                className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
+              >
+                Slides
+              </button>
+              {/* <button
+                type="button"
+                onClick={() => handleButtonClick('https://github.com/beelauuu/TASite/raw/main/public/discussion/DiscussionFifteen.zip')}
+                style={{ marginLeft: '10px' }}
+                className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
+              >
+                Code
+              </button> */}
+            </div>
+
         </div>
       </div>
     </div>
