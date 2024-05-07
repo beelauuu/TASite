@@ -504,6 +504,20 @@ function Content({ isNightMode }) {
                 Slides
               </button>
             </div>
+
+            <div className={`wrapper mt-1 ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
+              <p style={{ display: 'inline' }} className={`week ${isNightMode ? 'night-mode-text' : 'day-mode-text'}`}>
+                Discussion 27:
+              </p>
+              <button
+                type="button"
+                onClick={() => handleButtonClick('https://beelauuu.github.io/slides/docs/50724')}
+                style={{ marginLeft: '10px' }}
+                className={`btn ${isNightMode ? 'btn-light' : 'btn-dark'}`}
+              >
+                Slides
+              </button>
+            </div>
         </div>
       </div>
     </div>
